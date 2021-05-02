@@ -1,0 +1,559 @@
+@font-face {
+  font-family: 'Sunday love';
+  src: url("../Sunday Love.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Gayathri';
+  src: url("../Gayathri-Bold.ttf");
+  font-weight: bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    width: 92%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 740px) {
+  .container {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .container {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+a {
+  text-decoration: none;
+  transition: .25s ease-in-out;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/Hairdresser 1920x1080.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#logo {
+  width: 25%;
+  position: fixed;
+  width: 360px;
+  margin-top: -25px;
+  margin-left: -45px;
+  top: -1.25em;
+}
+
+#mob-logo {
+  background: url("../img/bonum-logo.png") left no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 60px;
+  float: left;
+  position: relative;
+  left: -50px;
+}
+
+.nav-bar {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)), url("../img/texture.svg") no-repeat;
+  background-position: -50%;
+  background-size: cover;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.nav-bar .container {
+  flex-direction: column;
+}
+
+ul.top-menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+ul.top-menu li {
+  padding: 10px 0;
+  font-size: 1em;
+}
+ul.top-menu li:last-of-type {
+  padding: 10px 15px;
+}
+ul.top-menu a {
+  color: black;
+  transition: .25s ease-in-out;
+  padding: 0 15px;
+}
+ul.top-menu a:hover {
+  color: #0084ff;
+}
+ul.top-menu li:first-of-type a {
+  border-right: 1px solid #000;
+}
+
+.middle {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding: 10px 0;
+  border-radius: 15px;
+  align-items: center;
+  overflow: auto;
+}
+.middle ul {
+  margin: 0;
+  padding: 0;
+}
+.middle ul li {
+  display: inline-block;
+}
+.middle ul li:first-of-type img {
+  width: 8.5em;
+  padding-right: 15px;
+  position: relative;
+  top: -5px;
+}
+.middle li a {
+  padding: 0 15px;
+}
+.middle ul img {
+  width: 2.5em;
+}
+
+nav {
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  font-size: 1em;
+  color: black;
+  text-transform: uppercase;
+  padding: 15px 15px 12.5px 15px;
+  border-bottom: 2.5px solid transparent;
+  transition: .25s ease-out;
+  display: block;
+}
+nav ul li a:hover {
+  color: salmon;
+  border-bottom: 2.5px solid salmon;
+}
+
+.active {
+  color: salmon;
+}
+
+.page-heading {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.page-heading h1 {
+  font-size: 4em;
+  font-family: 'Sunday love';
+  word-spacing: 15px;
+}
+.page-heading p {
+  font-size: 1.25em;
+  margin-bottom: 20px;
+}
+.page-heading a {
+  display: inline-block;
+  color: white;
+}
+.page-heading a img {
+  width: 75px;
+  padding: 0 15px;
+}
+
+section {
+  padding: 2.5% 0;
+}
+section h2 {
+  font-family: 'Sunday love';
+  font-size: 3em;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 1em;
+}
+section h3 {
+  margin-bottom: 1em;
+}
+section p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+section table {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.about {
+  background: linear-gradient(white, rgba(255, 255, 255, 0.6)), url("../img/texture.svg") no-repeat;
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+}
+.about h3 {
+  font-size: 1.25em;
+}
+.about p {
+  margin: 0 0 25px 0;
+}
+
+.price {
+  background: linear-gradient(white, rgba(255, 255, 255, 0.75)), url("../img/nenik-cover.jpg") top no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.price img {
+  width: 14%;
+  float: right;
+}
+
+table.content-table {
+  border-collapse: collapse;
+  margin: 0 0 25px 0;
+  width: 75%;
+}
+table.content-table tr {
+  text-align: left;
+}
+
+thead tr th {
+  text-decoration: underline;
+  padding-bottom: 0.5em;
+  text-decoration: underline;
+}
+
+tbody tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+tbody tr td {
+  text-align: right;
+}
+
+.gallery {
+  background: linear-gradient(white, rgba(255, 255, 255, 0.6)), url("../img/texture.svg") no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/vyplnek.jpg") no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: white;
+}
+.contact h2 {
+  border-bottom: 1px solid white;
+}
+.contact .boxes {
+  display: flex;
+  justify-content: space-around;
+}
+.contact .box {
+  width: 30%;
+  text-align: center;
+}
+.contact img {
+  width: 70%;
+  margin-bottom: 0.75em;
+}
+.contact h3 {
+  font-family: 'Sunday love';
+  word-spacing: 10px;
+  font-size: 1.5em;
+}
+.contact a {
+  color: #fff;
+}
+.contact a:hover {
+  color: salmon;
+}
+.contact ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+.contact ul li {
+  padding: 0px 15px;
+  margin: 0 15px;
+}
+.contact ul li:first-of-type {
+  list-style: none;
+}
+
+iframe {
+  width: 100%;
+}
+
+footer {
+  background: #2f2f2f;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+
+footer .container ul li {
+  display: inline-block;
+}
+
+footer .container .social-icons a {
+  font-size: 26px;
+}
+footer .container .social-icons a:hover {
+  color: salmon;
+}
+
+footer .container ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+footer .container ul li a:hover {
+  color: salmon;
+}
+
+@media screen and (min-width: 876px) {
+  span {
+    display: none;
+  }
+}
+@media screen and (max-width: 876px) {
+  body {
+    font-size: 14px;
+  }
+
+  section h2 {
+    font-size: 2.5em;
+  }
+
+  ul.top-menu {
+    display: none;
+  }
+
+  .middle {
+    display: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .page-heading {
+    top: 50%;
+  }
+
+  .page-heading h1 {
+    font-size: 6vw;
+  }
+
+  .page-heading p {
+    font-size: 3vw;
+  }
+
+  .price div img {
+    display: none;
+  }
+
+  .price table {
+    width: 100%;
+  }
+
+  .contact ul {
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    line-height: 1.5em;
+  }
+
+  .contact .boxes {
+    flex-direction: column;
+  }
+
+  .contact .box {
+    width: 95%;
+    margin-bottom: 1em;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  footer div:nth-of-type(2) {
+    margin: 25px 0;
+  }
+}
+@media screen and (min-width: 876px) {
+  .social-icons {
+    position: relative;
+    left: 50px;
+  }
+}
+/*Hamburger*/
+.mmenu-icon-wrapper {
+  position: fixed;
+  top: 1.25em;
+  right: 1.5em;
+  height: 26px;
+  width: 26px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media screen and (min-width: 480px) {
+  .mmenu-icon-wrapper {
+    top: 1.25em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mmenu-icon-wrapper {
+    top: 1.25em;
+  }
+}
+.mmenu-icon,
+.mmenu-icon:before,
+.mmenu-icon:after {
+  content: '';
+  position: absolute;
+  border-radius: 1em;
+  height: 2px;
+  width: 26px;
+  background: black;
+  transition: all 0.2s ease;
+}
+
+.mmenu-icon {
+  top: 0.75em;
+}
+
+.mmenu-icon:before {
+  top: -0.5em;
+}
+
+.mmenu-icon:after {
+  top: 0.5em;
+}
+
+.mmenu-active .mmenu-icon {
+  background: transparent;
+  transform: rotate(-135deg);
+}
+
+.mmenu-active .mmenu-icon:before,
+.mmenu-active .mmenu-icon:after {
+  top: 0;
+}
+
+.mmenu-active .mmenu-icon:before {
+  transform: rotate(90deg);
+}
+
+.mmenu-active .mmenu-icon,
+.mmenu-active .mmenu-icon:before,
+.mmenu-active .mmenu-icon:after {
+  background: white;
+}
+
+.mmenu-menu {
+  transition: all 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.mmenu-active .mmenu-menu {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.mmenu-menu ul {
+  display: block;
+  transition: all 0.4s ease;
+  padding: 0;
+  list-style-type: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  font-size: 20px;
+  line-height: 200%;
+}
+
+.mmenu-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.mmenu-menu ul li a:hover {
+  color: salmon;
+}
+
+.mmenu-active .mmenu-menu ul {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (max-width: 876px) {
+  .menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 876px) {
+  .mmenu-menu, .mmenu-icon-wrapper {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
